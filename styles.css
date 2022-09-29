@@ -1,0 +1,296 @@
+/* LESLIE GUZMAN */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-----------------------^ RESET ^--------------------------*/ 
+
+header {
+    background-image: linear-gradient(#55BCD5, white);
+}
+
+header img {
+    background-color: transparent;
+    width: 20%; 
+    
+}
+
+#menu-toggle ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+#menu-toggle li {
+   list-style: none;
+   margin-right: 100px;
+}
+
+
+
+#menu-toggle a {
+    text-decoration: none;
+    color: black;
+    border: 10px solid white;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+img { 
+    width: 100%; 
+    height: auto;
+}
+
+header p {
+    font-family: 'Montserrat', sans-serif;
+}
+header h1{
+    font-family: 'Molle', cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#intro h2 {
+    font-family: 'Molle', cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#intro p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#plan {
+    background-color: #F6D64A;
+}
+
+#plan img {
+    background-color: #55BCD5;
+    border: 5px solid white;
+    border-radius: 5%;
+    width: 100%; 
+    height: auto;
+}
+
+#about img {
+    background-color:#499BD2;
+    border: 0px solid white;
+    width: 80%; 
+    
+    
+}
+
+#about {
+    background-color: #499BD2;
+}
+    
+
+form{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 80%;
+    display: block;
+}
+
+input, label, fieldset{
+	display: inline-flex;
+	width: 95%;
+}
+
+label {
+   padding-top: 10px;
+}
+
+
+form input {
+    border: 2px solid #9B26B0;
+    height: 50px;
+    margin-top: 15px;
+}
+
+
+
+input[type=submit]{
+    background-color: #9B26B0;
+    width: 40%;
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+#contact{
+    font-family: 'Molle', cursive;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+fieldset{
+	border: 1px solid #222;
+	padding: 0.5em 0 1em 0.5em;
+	margin: 0.75em 0 0.25em 0;
+	width: 98%;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr 3fr;
+}
+
+#img-grid{
+    display: grid;
+}
+
+
+
+#contact div {
+    width: 95%;
+    padding: 20px;
+    text-align: center;
+
+}
+
+#contact h3 {
+    font-size: 30px;
+}
+
+.form-required {
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+footer {
+    background-color: #EAEAEA;
+    padding-top: 10%;
+}
+
+
+
+
+
+
+/*----------------SMALL SCREEN----------------------*/ 
+@media screen and (min-width: 320px){
+    body {
+        min-width: 320px;
+    }
+    #plan{
+        padding: 0px 80px;
+    }
+    #about div {
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer p {
+        font-size: 20px; 
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+
+    
+
+}
+
+/*---------------MEDIUM SCREEN----------------------*/
+@media screen and (min-width: 768px){
+    #img-grid{
+        width: 100%;
+    }
+    #about div {
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #plan div {
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    form{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        font-size: 80%;
+        display: block;
+    }
+
+    input, label, fieldset{
+        display: flex;
+        width: 95%;
+        grid-template-columns: 2fr;
+    }
+
+} 
+
+/*---------------LARGE SCREEN-----------------------*/
+@media screen and (min-width: 1400px){
+    #plan div{
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    input, label, fieldset{
+        display: flex;
+        width: 95%;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    form {
+        display: flex;
+    }
+}
